@@ -13,6 +13,7 @@ public class Adder implements AdderConstants {
     Path path = Paths.get("test.txt");
     Adder parser = new Adder(Files.newInputStream(path));
     parser.Start();
+    System.out.println(parser.getNextToken());
   }
 
   final public void Start() throws ParseException {
